@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZQHTPJEXD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1ZQHTPJEXD');
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section#showcase {
+            min-height: 300px;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat 0 -400px;
+            text-align: center;
+            color: black;
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+            color: black;
+        }
+        section#showcase p {
+            font-size: 20px;
+        }
+        .box {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h2><span class="highlight">hyperlocality.github.io</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1 id="hello"></h1>
+    <script>
+        const hellos = [
+            "Hello!",
+            "Hola!",
+            "Bonjour!",
+            "Hallo!",
+            "Ciao!",
+            "Olá!",
+            "Здравствуйте! (Zdravstvuyte)",
+            "你好! (Nǐ hǎo)",
+            "こんにちは! (Konnichiwa)",
+            "안녕하세요! (Annyeonghaseyo)",
+            "مرحبا! (Marhaba)",
+            "नमस्ते! (Namaste)",
+            "สวัสดี! (Sawasdee)",
+            "שלום! (Shalom)",
+            "हॅलो! (Hello)",
+            "Γειά σου! (Yia sou)",
+            "Bună!",
+            "Tere!",
+            "Ahoj!",
+            "Sveiki!",
+            "Hei!",
+            "Halló!",
+            "Aloha!",
+            "Merhaba!",
+            "Sawubona!",
+            "Salam!",
+            "Cześć!",
+            "Hej!",
+            "Selam!",
+            "Здраво! (Zdravo)",
+            "Kamusta!",
+            "Xin chào!",
+            "Dia dhuit!",
+            "Szia!",
+            "Salut!",
+            "Molo!",
+            "Yassou!",
+            "Saluton!",
+            "Pryvit!",
+            "Habari!",
+            "Sawubona!",
+            "Sannu!",
+            "Kia ora!",
+            "Mhoro!",
+            "Chào bạn!",
+            "Halo!",
+            "Sawubona!",
+            "Hola!"
+        ];
+        
+        const randomHello = hellos[Math.floor(Math.random() * hellos.length)];
+        document.getElementById('hello').textContent = randomHello;
+    </script>
+            <p>Here are a few things about me.</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="box">
+                <h2>About Me</h2>
+                <p>Born in New York City.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="box">
+                <h2>Hobbies</h2>
+                <ul style="list-style-type:square">
+                  <li><Several times a week, I like going on long walks (around 45 minutes) and lifting weights at the gym.</li>
+                  <li>In the past, I have traveled to Italy, Japan, Canada, Mexico, and Costa Rica.</li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="box">
+                <h2>Work</h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024</p>
+        <p class="last-updated">Last updated: <span id="last-updated-date"></span></p>
+    </footer>
+    <script>
+        document.getElementById('last-updated-date').textContent = new Date(document.lastModified).toLocaleDateString();
+    </script>
+</body>
+</html>
